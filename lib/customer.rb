@@ -17,7 +17,6 @@ class Customer
     Meal.all.select { |meal| meal.customer ==  self}
   end
   def waiters
-    Waiter.all.select { |waiter|  }
-    binding.pry
+    Meal.all.select{|meal|meal.customer == self}.map { |meal|meal.waiter  }
   end
 end
