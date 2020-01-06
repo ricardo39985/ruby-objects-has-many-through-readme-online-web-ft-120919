@@ -19,10 +19,8 @@ class Waiter
     tip = 0
     customer = nil
     Meal.all.each do |meal|
-      if meal.tip > tip
+      meal.tip > tip ?
         tip, customer =meal.tip, meal.customer
-
-      end
     end
     customer
   end
