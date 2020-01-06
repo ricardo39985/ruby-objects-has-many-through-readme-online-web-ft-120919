@@ -1,5 +1,5 @@
 class Meal
-  attr_reader :waiter, :custmer, :total, :tip
+  attr_reader :waiter, :customer, :total, :tip
   @@all = []
   def initialize(waiter, customer, total, tip)
     @waiter = waiter
