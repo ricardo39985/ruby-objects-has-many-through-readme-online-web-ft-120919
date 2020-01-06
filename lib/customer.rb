@@ -1,3 +1,4 @@
+require "pry"
 class Customer
   attr_reader :name, :age
   @@all = []
@@ -10,6 +11,6 @@ class Customer
     @@all
   end
   def new_meal(waiter, ,total, tip)
-
+    binding.pry
   end
 end
