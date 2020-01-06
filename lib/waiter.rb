@@ -18,8 +18,8 @@ class Waiter
   def best_tipper
     tip = 0
     customer = nil
-    Meal.all.each do |meal| meal.tip < tip ? 
-      tip, customer = meal.tip, meal.customer 
+    Meal.all.each do |meal| meal.tip < tip ?
+      tip, customer = meal.tip, meal.customer
     end
     customer
   end
