@@ -21,7 +21,7 @@ class Waiter
     Meal.all.each do |meal|
       if meal.tip > tip
         tip, customer =meal.tip, meal.customer
-        
+
       end
     end
     customer
