@@ -15,6 +15,6 @@ class Customer
   end
   def meals
     Meal.all.map { |meal| meal.customer ==  self ? meal : nil }
-    binding.pry
+    # binding.pry
   end
 end
