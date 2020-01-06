@@ -14,7 +14,7 @@ class Customer
     Meal.new(waiter, self, total, tip)
   end
   def meals
-    Meal.all.map { |meal| meal.customer ==  self ? meal : nil }
+    Meal.all.select { |meal| meal.customer ==  self}
     # binding.pry
   end
 end
