@@ -16,5 +16,6 @@ class Customer
   def meals
     total = 0
     Meal.all.each { |meal| meal.customer === self? total+=1 : total+=0 }
+    total
   end
 end
