@@ -14,6 +14,7 @@ class Customer
     Meal.new(waiter, self, total, tip)
   end
   def meals
-    binding.pry
+    total = 0
+    Meal.all.each { |meal| meal.customer === self? total+=1 : total+=0 }
   end
 end
